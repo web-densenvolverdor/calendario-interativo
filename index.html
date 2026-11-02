@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        Calendário Interativo
+    </h1>
+    <div class="calendario">
+        <div class="cabecalho">
+            <button id="mes-anterior">&lt;</button>
+
+
+            <h2 id="mes-ano">Outubro 2026</h2>
+
+            <button id="proximo-mes">&gt;</button>
+        </div>
+
+        <div class="dias-semana">
+            <span>Dom</span>
+            <span>Seg</span>
+            <span>Ter</span>
+            <span>Qua</span>
+            <span>Qui</span>
+            <span>Sex</span>
+            <span>Sáb</span>
+        </div>
+
+        <div class="dias" id="dias">
+
+        </div>
+
+        <div id="informacao-feriado"></div>
+
+
+        <div class="formulario-data">
+    <h3>Adicionar data personalizada</h3>
+
+    <input type="number" id="dia-personalizado" placeholder="Dia" min="1" max="31">
+
+    <select id="mes-personalizado">
+        <option value="">Selecione o mês</option>
+        <option value="0">Janeiro</option>
+        <option value="1">Fevereiro</option>
+        <option value="2">Março</option>
+        <option value="3">Abril</option>
+        <option value="4">Maio</option>
+        <option value="5">Junho</option>
+        <option value="6">Julho</option>
+        <option value="7">Agosto</option>
+        <option value="8">Setembro</option>
+        <option value="9">Outubro</option>
+        <option value="10">Novembro</option>
+        <option value="11">Dezembro</option>
+    </select>
+
+    <input type="text" id="nome-personalizado" placeholder="Nome da ocasião">
+
+    <textarea id="descricao-personalizada" placeholder="Descrição da ocasião"></textarea>
+
+    <button id="adicionar-data">Adicionar data</button>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

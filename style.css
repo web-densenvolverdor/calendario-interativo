@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #38bdf8;
+    text-align: center;
+}
+
+.calendario {
+    background: #1e293b;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cabecalho h2 {
+    font-size: 20px;
+    color: #f8fafc;
+}
+
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dias-semana span {
+    color: #38bdf8;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.dias div {
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hoje {
+    background: #0ea5e9;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.feriado {
+    background: rgba(245, 158, 11, 0.35);
+    color: #1e293b;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.formulario-data {
+    margin-topo: 15px;
+    padding: 12px;
+    width 100%;
+    max-width 260px;
+    background: #0f172a;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
